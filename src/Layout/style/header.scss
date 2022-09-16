@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  .logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: transparent;
+    background-image: linear-gradient(
+      to right top,
+      #ff00ee,
+      #cb5cff,
+      #917cff,
+      #538fff,
+      #009aff
+    );
+    background-clip: text;
+  }
+  .navbar {
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      li {
+        a {
+          font-size: 1rem;
+          font-weight: 500;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: #cb5cff;
+          }
+        }
+      }
+    }
+  }
+  .register {
+    display: flex;
+    gap: 1rem;
+    button {
+      font-weight: 500;
+    }
+  }
+}
+
+.underline {
+  text-decoration: underline;
+  color: #cb5cff;
+}
