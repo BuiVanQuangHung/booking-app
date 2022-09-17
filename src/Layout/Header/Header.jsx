@@ -5,7 +5,6 @@ import "../style/header.scss";
 
 const Header = () => {
   const location = useLocation().pathname;
-  console.log(location);
   return (
     <div className="header">
       <div className="logo">tour.ing</div>
