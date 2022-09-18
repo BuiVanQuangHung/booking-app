@@ -4,11 +4,13 @@ import Header from "./Header/Header";
 
 const Layout = ({ children }) => {
   return (
-    <div style={{ padding: "1rem 3rem" }}>
-      <Header />
-      {children}
-      <Footer />
-    </div>
+    <>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <Header />
+        <div style={{ flex: 1 }}>{children}</div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

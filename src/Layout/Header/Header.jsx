@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../style/header.scss";
@@ -7,18 +6,18 @@ const Header = () => {
   const location = useLocation().pathname;
   return (
     <div className="header">
-      <div className="logo">tour.ing</div>
+      <div className="logo">Tour.ing</div>
       <div className="navbar">
         <ul>
           <li>
-            <Link to="/" className={location === "/" ? "underline" : ""}>
+            <Link to="/" className={location === "/" && "active"}>
               Home
             </Link>
           </li>
           <li>
             <Link
               to="/bookingform"
-              className={location === "/bookingform" ? "underline" : ""}
+              className={location === "/bookingform" && "active"}
             >
               booking form
             </Link>
@@ -26,26 +25,21 @@ const Header = () => {
           <li>
             <Link
               to="/category"
-              className={location === "/category" ? "underline" : ""}
+              className={location === "/category" && "active"}
             >
               category
             </Link>
           </li>
           <li>
-            <Link
-              to="/aboutus"
-              className={location === "/aboutus" ? "underline" : ""}
-            >
+            <Link to="/aboutus" className={location === "/aboutus" && "active"}>
               about us
             </Link>
           </li>
         </ul>
       </div>
       <div className="register">
-        <Button>login</Button>
-        <Button color="secondary" variant="contained">
-          sign up
-        </Button>
+        <button>login</button>
+        <button>sign up</button>
       </div>
     </div>
   );

@@ -1,12 +1,5 @@
 .footer {
-  background-image: linear-gradient(
-    to right top,
-    #ffffff,
-    #fcfaff,
-    #fbf4ff,
-    #fceeff,
-    #ffe7fd
-  );
+  background-image: var(--main-background);
   .footer-detail {
     padding-top: 5rem;
     display: flex;
@@ -18,18 +11,11 @@
       font-size: 2rem;
       font-weight: bolder;
       color: transparent;
-      background-image: linear-gradient(
-        to right top,
-        #ff00ee,
-        #cb5cff,
-        #917cff,
-        #538fff,
-        #009aff
-      );
+      background-image: var(--main-background-logo);
       background-clip: text;
     }
     .infor-detail {
-      flex: 4;
+      flex: 6;
       gap: 1rem;
       .wrap-title {
         flex: 1;
@@ -56,8 +42,8 @@
   }
   .footer-bottom {
     text-align: center;
-    color: gray;
+    color: rgb(172, 172, 172);
     font-weight: 600;
-    padding: 2rem 0;
+    padding: 3rem 0 2rem;
   }
 }
