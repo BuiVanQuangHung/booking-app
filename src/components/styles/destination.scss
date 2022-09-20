@@ -1,0 +1,25 @@
+.container-destination {
+  padding: 3rem;
+  .destination-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      text-transform: capitalize;
+      font-size: 3rem;
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      width: 30%;
+      text-align: center;
+      font-size: larger;
+      color: rgb(175, 175, 175);
+    }
+  }
+  .card {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
