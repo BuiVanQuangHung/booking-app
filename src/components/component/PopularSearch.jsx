@@ -70,10 +70,10 @@ const PopularSearch = () => {
   ];
   return (
     <div className="container">
-      <h2>
+      <h1>
         PopularSearch
         <span />
-      </h2>
+      </h1>
       <div className="city">
         {country.map((city) => {
           return <p key={city.id}>{city.place}</p>;

@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  h2 {
+  h1 {
     &::after {
       content: "";
       width: 10px;
@@ -44,6 +44,28 @@
       border: 1px solid gray;
       padding: 10px 1rem;
       border-radius: 10px;
+    }
+  }
+}
+@media screen and(max-width: 1200px) {
+  .container {
+    margin: 5rem 3rem 2rem;
+    h1 {
+      &::after {
+        content: "";
+        right: 35%;
+      }
+      &::before {
+        content: "";
+        right: 33%;
+      }
+      span {
+        right: 38%;
+      }
+    }
+    .city {
+      margin-top: 2rem;
+      grid-template-columns: auto auto auto auto auto auto;
     }
   }
 }

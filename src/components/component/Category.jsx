@@ -64,9 +64,10 @@ const Category = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 2000,
+    swipeToSlide: true,
     nextArrow: <SampleNextArrow className="nextArrow" />,
     prevArrow: <SamplePrevArrow className="prevArrow" />,
   };

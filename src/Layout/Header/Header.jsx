@@ -6,7 +6,7 @@ const Header = () => {
   const location = useLocation().pathname;
   return (
     <div className="header">
-      <div className="logo">Tour.ing</div>
+      <div className="logo">Tour.inK</div>
       <div className="navbar">
         <ul>
           <li>

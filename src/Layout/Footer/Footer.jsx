@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-detail">
-        <div className="logo">Tour.ing</div>
+        <div className="logo">Tour.inK</div>
         <div className="infor-detail">
           <ul className="wrap-title">
             <li className="title">
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="footer-bottom">
-        Tour.ing 2022,You only live once, but if you do it right, once is enough
+        Tour.ink 2022,You only live once, but if you do it right, once is enough
       </p>
     </div>
   );
