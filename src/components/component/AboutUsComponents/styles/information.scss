@@ -1,0 +1,13 @@
+.infor-contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  .infor-title {
+    font-size: 3rem;
+  }
+  p {
+    text-align: center;
+    width: 50%;
+  }
+}

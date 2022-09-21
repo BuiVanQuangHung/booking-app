@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/detail.scss";
-import girl from "../../img/girl1.jpg";
+import "./styles/detail.scss";
+import girl from "../../../img/girl1.jpg";
 import TagFacesIcon from "@mui/icons-material/TagFaces";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import AssistantPhotoIcon from "@mui/icons-material/AssistantPhoto";

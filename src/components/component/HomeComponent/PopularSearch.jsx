@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/popularSearch.scss";
+import "./styles/popularSearch.scss";
 
 const PopularSearch = () => {
   //! State

@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import "../styles/category.scss";
-import danang from "../../img/diadiem1.jpg";
-import nhatrang from "../../img/diadiem2.jpg";
-import hoian from "../../img/diadiem3.jpg";
+import "./styles/category.scss";
+import danang from "../../../img/diadiem1.jpg";
+import nhatrang from "../../../img/diadiem2.jpg";
+import hoian from "../../../img/diadiem3.jpg";
 
 const Category = () => {
   const imgs = [

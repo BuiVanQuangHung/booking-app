@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../styles/destination.scss";
-import diadiem from "../../img/diadiem1.jpg";
+import "./styles/destination.scss";
+import diadiem from "../../../img/diadiem1.jpg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PaidIcon from "@mui/icons-material/Paid";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";

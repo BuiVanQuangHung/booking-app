@@ -27,8 +27,13 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
 body::-webkit-scrollbar {
-  display: none;
+  width: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--main-background-logo);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -36,6 +41,7 @@ code {
 }
 p {
   font-size: 15px;
+  color: rgb(137, 137, 137);
 }
 h1 {
   font-size: 30px;

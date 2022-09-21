@@ -5,10 +5,10 @@ import SearchIcon from "@mui/icons-material/Search";
 import AddLocationIcon from "@mui/icons-material/AddLocation";
 import DateRangeIcon from "@mui/icons-material/DateRange";
 import PersonIcon from "@mui/icons-material/Person";
-import "../styles/banner.scss";
-import banner1 from "../../img/banner1.jpg";
-import banner2 from "../../img/banner2.jpg";
-import banner3 from "../../img/banner3.jpg";
+import "./styles/banner.scss";
+import banner1 from "../../../img/banner1.jpg";
+import banner2 from "../../../img/banner2.jpg";
+import banner3 from "../../../img/banner3.jpg";
 
 const Banner = () => {
   //! State

@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/download.scss";
-import download from "../../img/download.png";
-import download2 from "../../img/download2.png";
+import "./styles/download.scss";
+import download from "../../../img/download.png";
+import download2 from "../../../img/download2.png";
 
 const Download = () => {
   return (
