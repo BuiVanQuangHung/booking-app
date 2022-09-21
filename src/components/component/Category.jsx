@@ -72,7 +72,7 @@ const Category = () => {
     prevArrow: <SamplePrevArrow className="prevArrow" />,
   };
   return (
-    <div className="container-carousel">
+    <div className="container-carousel" data-aos="zoom-out-left">
       <div className="category-title">
         <h1>Categories</h1>
         <p>

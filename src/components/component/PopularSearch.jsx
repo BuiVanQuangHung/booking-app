@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/popularSearch.scss";
 
 const PopularSearch = () => {
+  //! State
   const country = [
     {
       id: 1,
@@ -68,15 +69,16 @@ const PopularSearch = () => {
       place: "Cao Bằng",
     },
   ];
+  //! Render
   return (
-    <div className="container">
+    <div className="container" data-aos="zoom-in">
       <h1>
         PopularSearch
         <span />
       </h1>
       <div className="city">
-        {country.map((city) => {
-          return <p key={city.id}>{city.place}</p>;
+        {country.map((city, index) => {
+          return <p key={index}>{city.place}</p>;
         })}
       </div>
     </div>

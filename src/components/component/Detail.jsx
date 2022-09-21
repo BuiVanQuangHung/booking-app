@@ -8,9 +8,9 @@ import AssistantPhotoIcon from "@mui/icons-material/AssistantPhoto";
 const Detail = () => {
   return (
     <div className="container-detail">
-      <div className="box-img">
+      <div className="box-img" data-aos="fade-left">
         <img src={girl} alt={girl} />
-        <div className="detail" id="detail_1">
+        <div className="detail" id="detail_1" data-aos="flip-left">
           <p className="icon">
             <TagFacesIcon />
           </p>
@@ -19,7 +19,7 @@ const Detail = () => {
             <span>Custommers</span>
           </div>
         </div>
-        <div className="detail" id="detail_2">
+        <div className="detail" id="detail_2" data-aos="flip-right">
           <p className="icon">
             <TelegramIcon />
           </p>
@@ -28,7 +28,7 @@ const Detail = () => {
             <span>Destinations</span>
           </div>
         </div>
-        <div className="detail" id="detail_3">
+        <div className="detail" id="detail_3" data-aos="flip-left">
           <p className="icon">
             <AssistantPhotoIcon />
           </p>
@@ -38,7 +38,7 @@ const Detail = () => {
           </div>
         </div>
       </div>
-      <div className="box-detail">
+      <div className="box-detail" data-aos="fade-right">
         <h1>Why Choose Tour.ink</h1>
         <p>
           Tourink has cooperated with country that prrovide more than 600

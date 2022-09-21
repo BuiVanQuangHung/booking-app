@@ -11,6 +11,7 @@ import banner2 from "../../img/banner2.jpg";
 import banner3 from "../../img/banner3.jpg";
 
 const Banner = () => {
+  //! State
   const sliderItems = [
     {
       id: 1,
@@ -31,19 +32,24 @@ const Banner = () => {
       desc: "DON'T COMPROMISE ON STYLE",
     },
   ];
-  const widthWindow = window.innerWidth;
   const container = document.querySelector(".wrap_slider");
+  // const widthWindow = document.querySelector(".wrap_container");
+  // console.log("widthWindow", widthWindow.clientWidth);
+  // const widthWindow = 12;
   let translate = 0;
   const handleClickLeft = () => {
-    translate += widthWindow;
+    translate += 1382.4;
+    // eslint-disable-next-line no-useless-concat
     container.style.transform = "translateX(" + translate + "px" + ")";
   };
   const handleClickRight = () => {
-    translate -= widthWindow;
+    translate -= 1382.4;
+    // eslint-disable-next-line no-useless-concat
     container.style.transform = "translateX(" + translate + "px" + ")";
   };
+  //! Render
   return (
-    <div className="wrap_container">
+    <div className="wrap_container" data-aos="zoom-out-right">
       <div className="wrap_arrow">
         <span className="arrow" onClick={handleClickLeft}>
           <ChevronLeftIcon className="_left" fontSize="large" />

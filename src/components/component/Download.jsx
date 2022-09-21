@@ -5,7 +5,7 @@ import download2 from "../../img/download2.png";
 
 const Download = () => {
   return (
-    <div className="download_container">
+    <div className="download_container" data-aos="zoom-in-down">
       <div className="download">
         <h1>
           Download the <span>Tour.ink</span> app now!
