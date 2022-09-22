@@ -3,9 +3,9 @@ import "../components/stylesPage/home.scss";
 import Banner from "../components/component/HomeComponent/Banner";
 import PopularSearch from "../components/component/HomeComponent/PopularSearch";
 import Category from "../components/component/HomeComponent/Category";
-import Detail from "../components/component/HomeComponent/Detail";
 import Destination from "../components/component/HomeComponent/Destination";
 import Download from "../components/component/HomeComponent/Download";
+import AutocompleteComponent from "../components/component/HomeComponent/Autocomplete";
 
 const Home = () => {
   return (
@@ -13,9 +13,9 @@ const Home = () => {
       <div className="banner">
         <Banner />
       </div>
+      <AutocompleteComponent />
       <PopularSearch />
       <Category />
-      <Detail />
       <Destination />
       <Download />
     </>

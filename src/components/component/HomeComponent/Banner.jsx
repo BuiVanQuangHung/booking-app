@@ -1,14 +1,9 @@
 import React from "react";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import SearchIcon from "@mui/icons-material/Search";
-import AddLocationIcon from "@mui/icons-material/AddLocation";
-import DateRangeIcon from "@mui/icons-material/DateRange";
-import PersonIcon from "@mui/icons-material/Person";
 import "./styles/banner.scss";
 import banner1 from "../../../img/banner1.jpg";
 import banner2 from "../../../img/banner2.jpg";
 import banner3 from "../../../img/banner3.jpg";
+import Slider from "react-slick";
 
 const Banner = () => {
   //! State
@@ -32,80 +27,35 @@ const Banner = () => {
       desc: "DON'T COMPROMISE ON STYLE",
     },
   ];
-  const container = document.querySelector(".wrap_slider");
-  // const widthWindow = document.querySelector(".wrap_container");
-  // console.log("widthWindow", widthWindow.clientWidth);
-  // const widthWindow = 12;
-  let translate = 0;
-  const handleClickLeft = () => {
-    translate += 1382.4;
-    // eslint-disable-next-line no-useless-concat
-    container.style.transform = "translateX(" + translate + "px" + ")";
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    swipeToSlide: true,
   };
-  const handleClickRight = () => {
-    translate -= 1382.4;
-    // eslint-disable-next-line no-useless-concat
-    container.style.transform = "translateX(" + translate + "px" + ")";
-  };
+
   //! Render
   return (
-    <div className="wrap_container" data-aos="zoom-out-right">
-      <div className="wrap_arrow">
-        <span className="arrow" onClick={handleClickLeft}>
-          <ChevronLeftIcon className="_left" fontSize="large" />
-        </span>
-        <span className="arrow" onClick={handleClickRight}>
-          <ChevronRightIcon className="_right" fontSize="large" />
-        </span>
-      </div>
-      <div className="container_slider">
-        <div className="wrap_slider">
-          {sliderItems.map((item) => (
+    <div className="container_slider" data-aos="fade-up">
+      <Slider {...settings}>
+        {sliderItems.map((item) => {
+          return (
             <>
-              <div className="slider" key={item.id}>
-                <img src={item.img} alt={item.title} />
-                <div className="slider-detail">
-                  <p>All you need at Touring</p>
-                  <h1>{item.desc}</h1>
-                  <h3>{item.title}</h3>
+              <div key={item.id} className="image-list">
+                <img src={item.img} alt={item.img} />
+                <div className="image_list-detail">
+                  <h1>{item.title}</h1>
+                  <p>{item.desc}</p>
                 </div>
               </div>
             </>
-          ))}
-        </div>
-      </div>
-      <div className="box-information">
-        <div className="information location">
-          <div className="location-detail detail">
-            <p>Location</p>
-            <input type="text" placeholder="Where do you want to go?" />
-          </div>
-          <div className="icon location_icon">
-            <AddLocationIcon />
-          </div>
-        </div>
-        <div className="information date">
-          <div className="date-detail detail">
-            <p>Date</p>
-            <input type="text" placeholder="When do you want to go?" />
-          </div>
-          <div className="icon date_icon">
-            <DateRangeIcon />
-          </div>
-        </div>
-        <div className="information guest">
-          <div className="guest-detail detail">
-            <p>Guests</p>
-            <input type="text" placeholder="How many people?" />
-          </div>
-          <div className="icon guest_icon">
-            <PersonIcon />
-          </div>
-        </div>
-        <button>
-          <SearchIcon />
-        </button>
-      </div>
+          );
+        })}
+      </Slider>
     </div>
   );
 };

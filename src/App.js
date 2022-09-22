@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 
 function App() {
   useEffect(() => {
