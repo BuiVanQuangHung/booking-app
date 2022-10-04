@@ -1,0 +1,65 @@
+.container-item {
+  padding: 7rem 3rem;
+  .wrapper-boxitem {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    .card {
+      height: fit-content;
+      padding-bottom: 1rem;
+      width: auto;
+      overflow: hidden;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      position: relative;
+      img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+      }
+      .desc {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 7px;
+        color: white;
+        padding: 5px 10px;
+      }
+      h3 {
+        padding-left: 1rem;
+      }
+      .box-tour {
+        gap: 1rem;
+        padding: 0 1rem;
+        .tour-detail {
+          flex: 1;
+          h1 {
+            font-size: 3rem;
+          }
+          p {
+            display: flex;
+            align-items: center;
+            margin: 0.6rem 0;
+            span {
+              color: black;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+        button {
+          width: 100%;
+          padding: 12px;
+          font-size: large;
+          background: var(--main-background-logo);
+          border: none;
+          color: #fff;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

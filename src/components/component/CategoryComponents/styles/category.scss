@@ -1,0 +1,32 @@
+.wrapper-category {
+  padding: 5rem 3rem;
+  .wrap-boximg {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    .box-img {
+      height: 100%;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          scale: 1.1;
+        }
+      }
+      p {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        color: white;
+        font-weight: bold;
+        font-size: larger;
+      }
+    }
+  }
+}
