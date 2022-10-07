@@ -4,6 +4,7 @@ import EventIcon from "@mui/icons-material/Event";
 import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
 import HomeWorkIcon from "@mui/icons-material/HomeWork";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import nhatrang from "../../../img/diadiem2.jpg";
 import "./styles/item.scss";
 import { Link } from "react-router-dom";
@@ -48,6 +49,12 @@ const Item = () => {
                 <LightbulbIcon />
               </span>
               Code: TB4N3D-TP
+            </p>
+            <p>
+              <span>
+                <AttachMoneyIcon />
+              </span>
+              Price: 3600$
             </p>
           </div>
           <Link to="/bookingform">

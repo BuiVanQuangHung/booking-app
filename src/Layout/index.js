@@ -7,7 +7,13 @@ const Layout = ({ children }) => {
     <>
       <div style={{ display: "flex", flexDirection: "column" }}>
         <Header />
-        <div style={{ flex: 1 }}>{children}</div>
+        <div
+          style={{
+            flex: 1,
+          }}
+        >
+          {children}
+        </div>
         <Footer />
       </div>
     </>

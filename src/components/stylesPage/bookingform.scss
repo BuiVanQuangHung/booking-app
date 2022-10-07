@@ -22,8 +22,7 @@
     flex-direction: column;
     justify-content: flex-end;
     input {
-      padding: 5px 1rem;
-      font-size: large;
+      padding: 10px 1rem;
       outline: none;
       border: none;
     }
@@ -42,6 +41,8 @@
       margin: 1rem 0;
       input {
         border: 1px solid gray;
+        border-radius: 5px;
+        outline: none;
       }
       label {
         font-weight: bold;

@@ -19,13 +19,11 @@ function BookingForm() {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().required("Required"),
-    email: Yup.string().email("Invalid email format").required("Required"),
-    phone: Yup.string().when("modeOfContact", {
-      is: "telephonemoc",
-      then: Yup.string().required("Required"),
-    }),
-    content: Yup.string().required("Required"),
+    name: Yup.string().required("You missing this one"),
+    email: Yup.string()
+      .email("Invalid email format")
+      .required("You missing this one"),
+    phone: Yup.string().required("You missing this one"),
   });
 
   const onSubmit = (values) => {
@@ -81,18 +79,21 @@ function BookingForm() {
                   type="text"
                   label="Full name"
                   name="name"
+                  placeholder="Type your fullname..."
                 />
                 <FormikControl
                   control="input"
                   type="email"
                   label="Email"
                   name="email"
+                  placeholder="Type your email..."
                 />
                 <FormikControl
                   control="input"
                   type="text"
                   label="Phone number"
                   name="phone"
+                  placeholder="Type your phone number..."
                 />
                 <FormikControl
                   control="textarea"
@@ -100,6 +101,7 @@ function BookingForm() {
                   label="Content"
                   name="content"
                   className="textarea"
+                  placeholder="Type your wish..."
                 />
                 <button type="submit" disabled={!formik.isValid}>
                   Submit

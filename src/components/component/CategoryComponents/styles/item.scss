@@ -17,6 +17,9 @@
       flex: 1;
       display: flex;
       flex-direction: column;
+      h1 {
+        margin: 0 0;
+      }
       .tour-detail {
         flex: 1;
         h1 {
@@ -28,6 +31,11 @@
           span {
             color: black;
             margin-right: 1rem;
+          }
+          &:last-child {
+            font-size: larger;
+            color: red;
+            font-weight: bold;
           }
         }
       }

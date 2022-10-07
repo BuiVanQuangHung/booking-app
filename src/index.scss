@@ -1,0 +1,189 @@
+:root {
+  --main-background: linear-gradient(
+    to right top,
+    #ffffff,
+    #fcfaff,
+    #fbf4ff,
+    #fceeff,
+    #ffe7fd
+  );
+  --main-background-logo: linear-gradient(
+    to right top,
+    #ff00ee,
+    #cb5cff,
+    #917cff,
+    #538fff,
+    #009aff
+  );
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--main-background-logo);
+}
+.wrap-chatbox {
+  width: 100%;
+  position: fixed;
+  bottom: 20vh;
+  display: flex;
+  justify-content: flex-end;
+  .mes-icon {
+    border: none;
+    background: var(--main-background);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+    cursor: pointer;
+  }
+  .chatbot {
+    height: 450px;
+    width: 300px;
+    margin: 0 3rem 2rem;
+    background: var(--main-background);
+    z-index: 10000;
+    border-radius: 10px;
+    overflow: hidden;
+    .react-chatbot-kit-chat-container {
+      height: 450px;
+      display: flex;
+      overflow-y: auto;
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .react-chatbot-kit-chat-inner-container {
+        position: relative;
+        flex: 1;
+        .react-chatbot-kit-chat-header {
+          background: var(--main-background-logo);
+          color: white;
+          font-weight: bold;
+          padding: 10px;
+          text-align: center;
+        }
+        .react-chatbot-kit-chat-bot-message-container {
+          margin: 1rem 0;
+          padding: 5px 1rem;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          .react-chatbot-kit-chat-bot-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--main-background-logo);
+            p {
+              color: white;
+              font-weight: bold;
+            }
+          }
+          .react-chatbot-kit-chat-bot-message {
+            box-shadow: 2px 4px 8px rgb(255, 203, 232);
+            padding: 10px 1rem;
+            border-radius: 5px;
+            width: 70%;
+          }
+        }
+        .react-chatbot-kit-user-chat-message-container {
+          margin: 0.5rem 0;
+          padding: 5px 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 1rem;
+          .react-chatbot-kit-user-chat-message {
+            background: var(--main-background-logo);
+            color: #fff;
+            padding: 5px 1rem;
+            border-radius: 5px;
+          }
+          .react-chatbot-kit-user-avatar {
+            .react-chatbot-kit-user-avatar-container {
+              box-shadow: 2px 4px 6px rgb(255, 157, 252);
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .react-chatbot-kit-user-avatar-icon {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+        .react-chatbot-kit-chat-input-container {
+          .react-chatbot-kit-chat-input-form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            margin: 1rem 0 0;
+            input {
+              width: 230px;
+              padding: 11px;
+              border: none;
+              outline: none;
+            }
+            button {
+              width: 40px;
+              height: 40px;
+              border: none;
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+p {
+  font-size: 15px;
+  color: rgb(137, 137, 137);
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}

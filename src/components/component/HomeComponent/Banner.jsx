@@ -4,6 +4,7 @@ import banner1 from "../../../img/banner1.jpg";
 import banner2 from "../../../img/banner2.jpg";
 import banner3 from "../../../img/banner3.jpg";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   //! State
@@ -12,19 +13,19 @@ const Banner = () => {
       id: 1,
       img: banner1,
       title: "SUMMER SALE",
-      desc: "DON'T COMPROMISE ON STYLE",
+      desc: "TRAVEL NOW",
     },
     {
       id: 2,
       img: banner2,
-      title: "AUTUMN COLLECTION",
-      desc: "DON'T COMPROMISE ON STYLE",
+      title: "VIETNAM TRAVEL COLLECTION",
+      desc: "TRAVEL NOW",
     },
     {
       id: 3,
       img: banner3,
-      title: "LOUNGEWEAR LOVE",
-      desc: "DON'T COMPROMISE ON STYLE",
+      title: "BEST APP EVER",
+      desc: "TRAVEL NOW",
     },
   ];
   const settings = {
@@ -49,7 +50,9 @@ const Banner = () => {
                 <img src={item.img} alt={item.img} />
                 <div className="image_list-detail">
                   <h1>{item.title}</h1>
-                  <p>{item.desc}</p>
+                  <Link to="/category">
+                    <button>{item.desc}</button>
+                  </Link>
                 </div>
               </div>
             </>

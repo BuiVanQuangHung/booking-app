@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "./styles/category.scss";
 import { imgs } from "../../../data/data.js";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   function SampleNextArrow(props) {
@@ -52,12 +53,12 @@ const Category = () => {
           <Slider {...settings}>
             {imgs.map((item) => {
               return (
-                <>
+                <Link to="/category/baiviet">
                   <div key={item.id} className="image-list">
                     <img src={item.img} alt={item.img} />
                   </div>
                   <p>{item.desc}</p>
-                </>
+                </Link>
               );
             })}
           </Slider>
